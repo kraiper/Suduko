@@ -17,8 +17,9 @@ public class BoardStatus {
     
     protected int size;
     
-    public BoardStatus()
+    public BoardStatus(int _size)
     {
+        size = _size;
         boardPossitionStatus = new ArrayList[size][size];
         ResetField();
     }
@@ -38,7 +39,7 @@ public class BoardStatus {
             for(int j = 0; j < size; j++)
             {
                 boardPossitionStatus[i][j].clear();
-                for(int k = 1; k < 10; k++)
+                for(int k = 1; k < size+1; k++)
                 {
                     boardPossitionStatus[i][j].add(k);
                 }

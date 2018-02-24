@@ -5,6 +5,9 @@
  */
 package sudukogeneration;
 
+import Structures.Board;
+import Generation.Generator;
+
 /**
  *
  * @author Kraiper
@@ -16,6 +19,14 @@ public class SudukoGeneration {
      */
     public static void main(String[] args) {
         // TODO code application logic here
+        int boardSize = 4;
+        
+        Board gameBoard = new Board(boardSize);
+        Generator boardGenerator = new Generator(boardSize);
+        
+        boardGenerator.GenerateBoard(gameBoard, boardSize);
+        
+        gameBoard.printBoard();
     }
     
 }

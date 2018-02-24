@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package sudokugeneration.Generator;
+package Generation;
 
 import Generation.BoardStatus;
 import java.util.ArrayList;
@@ -21,7 +21,7 @@ import Structures.Neighbours;
 public class Generator extends BoardStatus{
     
     public Generator(int _size) {
-        size = _size;
+        super(_size);
     }
             
     public void GenerateBoard(Board _board, int _size)
