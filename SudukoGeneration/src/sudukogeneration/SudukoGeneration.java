@@ -29,7 +29,8 @@ public class SudukoGeneration {
         
         solutionBoard.printBoard();
         
-        GameBoard gameBoard = boardGenerator.SetBoard(solutionBoard, 6);
+        int nrOfClues = boardSize + boardSize/2;
+        GameBoard gameBoard = boardGenerator.SetBoard(solutionBoard, nrOfClues);
         
         gameBoard.printBoard();
     }
